@@ -1,0 +1,62 @@
+
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    text-align: center;
+    padding-top: 5px;
+    width: 300px; height: 300px;
+    margin-top: 150px;
+    margin-left:auto; margin-right:auto;
+}
+
+#top{
+    height:30px;
+}
+#bot{
+    height: 50px;
+} 
+
+#icon {
+    width: 65%;    
+    height: 130px;
+    font-size:20px;
+    float: left;
+}
+#temp {
+    text-align: left;
+    width: 35%;
+    height: 130px;
+    float: right;
+}
+
+
+#locationName{
+    font-size:25px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#day_time{
+    font-size:15px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#outlook{
+    font-size:20px;
+    text-align: center;
+}
+
+#tempValue{
+    font-size:50px;
+}
+
+
+
