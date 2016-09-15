@@ -1,5 +1,3 @@
-
-
 function getLocationAndWeather(): void{
     $.get( "http://geoip.nekudo.com/api?", function( data ) {
         document.getElementById("locationName").innerHTML = data.city + ", " + data.country.code;
