@@ -1,11 +1,6 @@
 function getLocationAndWeather() {
     $.get("http://geoip.nekudo.com/api?", function (data) {
-        if(data.city == false){
-            document.getElementById("locationName").innerHTML = "Location not found";
-        }else{
-            document.getElementById("locationName").innerHTML = data.city + ", " + data.country.code;
-        }
-        
+        document.getElementById("locationName").innerHTML = data.city + ", " + data.country.code;
         var lat = data.location.latitude;
         var lon = data.location.longitude;
         var id = "e96d027338512bd6e82f61f56ae404c0";
@@ -64,13 +59,19 @@ function updateTime() {
         day = "monday";
     }
     else if (dayNum == 2) {
-        day = "monday";
+        day = "tuesday";
     }
     else if (dayNum == 3) {
-        day = "monday";
+        day = "wednesday";
     }
     else if (dayNum == 4) {
         day = "thursday";
+    }
+    else if (dayNum == 5) {
+        day = "friday";
+    }
+    else if (dayNum == 6) {
+        day = "saturday";
     }
     document.getElementById("day_time").innerHTML = day + ", " + t_str;
 }

@@ -59,11 +59,15 @@ function updateTime(){
     }else if(dayNum == 1){
         day = "monday";
     }else if(dayNum == 2){
-        day = "monday";
+        day = "tuesday";
     }else if(dayNum == 3){
-        day = "monday";
+        day = "wednesday";
     }else if(dayNum == 4){
         day = "thursday";
+    }else if(dayNum == 5){
+        day = "friday";
+    }else if(dayNum == 6){
+        day = "saturday";
     }
     document.getElementById("day_time").innerHTML = day + ", " + t_str;
 }
