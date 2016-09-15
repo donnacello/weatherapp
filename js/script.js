@@ -26,13 +26,13 @@ function changeBackground(icon) {
         return "#F4E982";
     }
     else if (icon == "01n" || icon == "02n" || icon == "03n" || icon == "04n") {
-        return "242E42";
+        return "grey";
     }
     else if (icon == "09d" || icon == "09n" || icon == "10d" || icon == "10n") {
         return "cadetblue";
     }
     else if (icon == "11d" || icon == "11n") {
-        return "lightgrey";
+        return "#18181E";
     }
     else if (icon == "13d" || icon == "13n") {
         return "#93A6C1";
