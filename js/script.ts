@@ -71,7 +71,6 @@ function updateTime(){
     }
     document.getElementById("day_time").innerHTML = day + ", " + t_str;
 }
-
 setInterval(updateTime, 1000);
 getLocationAndWeather();
 
