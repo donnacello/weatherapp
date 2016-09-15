@@ -32,7 +32,7 @@ function changeBackground(icon) {
         return "cadetblue";
     }
     else if (icon == "11d" || icon == "11n") {
-        return "#18181E";
+        return "lightgrey";
     }
     else if (icon == "13d" || icon == "13n") {
         return "#93A6C1";
