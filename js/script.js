@@ -71,6 +71,3 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 getLocationAndWeather();
-function clkfunc() {
-    alert("hi");
-}
