@@ -10,11 +10,7 @@ function getLocationAndWeather(): void{
         $.get( weatherInfo, function( data ) {
             var tempKelv: number = data.main.temp;
             var tempCel = tempKelv-273.15;
-<<<<<<< HEAD
             document.getElementById("tempValue").innerHTML = String(tempCel.toFixed(0))+ "&#176";
-=======
-            document.getElementById("tempValue").innerHTML = String(tempCel.toFixed(0));
->>>>>>> origin/master
             document.getElementById("outlook").innerHTML = data.weather[0].description;
             var img : HTMLImageElement = <HTMLImageElement>  $("#weatherIcon")[0];
             img.src = "../images/"+data.weather[0].icon+".png";
