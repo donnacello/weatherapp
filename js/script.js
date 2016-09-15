@@ -1,6 +1,11 @@
 function getLocationAndWeather() {
     $.get("http://geoip.nekudo.com/api?", function (data) {
-        document.getElementById("locationName").innerHTML = data.city + ", " + data.country.code;
+        if(data.city == false){
+            document.getElementById("locationName").innerHTML = "Location not found";
+        }else{
+            document.getElementById("locationName").innerHTML = data.city + ", " + data.country.code;
+        }
+        
         var lat = data.location.latitude;
         var lon = data.location.longitude;
         var id = "e96d027338512bd6e82f61f56ae404c0";
