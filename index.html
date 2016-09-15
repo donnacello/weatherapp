@@ -2,10 +2,15 @@
 
 <head>
     <title>WeatherApp</title>
+    <link rel="icon" type="image/png" href="./images/weathericon.png"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <link rel="stylesheet" href="./bower_components/fakeLoader/fakeLoader.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./bower_components/fakeLoader/fakeLoader.min.js"></script>
 </head>
 
 <body>
+    <div id="fakeLoader"></div>
     <div id=container>
         <div id=top>
             <h3 id=locationName>City Name</h3>
@@ -36,6 +41,9 @@
     
     <link rel="stylesheet" href="./css/format.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./bower_components/fakeLoader/fakeLoader.min.js"></script>
+
     <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <!--Bootstrap Script-->
@@ -43,6 +51,15 @@
         <!--Custom Script-->
         <script src="./js/script.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $("#fakeloader").fakeLoader({
+        timeToHide:20000, //Time in milliseconds for fakeLoader disappear
+        zIndex:"999",//Default zIndex
+        spinner:"spinner6",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        bgColor: "#F4E982" //Hex, RGB or RGBA colors
+        });
+    </script>
 
    <script type="text/javascript">
     var appInsights=window.appInsights||function(config){
@@ -54,6 +71,8 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
+
+    
 </body>
 
 </html>
